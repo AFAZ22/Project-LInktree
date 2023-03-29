@@ -1,0 +1,94 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.outer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url('images/bg-cover.webp');
+  background-color: #94AF9F;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.box-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.box-profile img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.box-link {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 15px;
+}
+
+.box-link button {
+  background-color: #DBE4C6;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 400ms ease-in-out;
+  border-radius: 5vh;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box-link button:hover {
+  background-color: #bbd6b8;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .outer-box {
+    width: 100%;
+  }
+
+  .box-link {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .box-profile img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .box-link button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
